@@ -1,13 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Normas&amp;Gestion</title>    <link rel="icon" type="image/x-icon" href="imagenes/logo.png">
+ <head>
+        <link rel="stylesheet" href="style.css">
+        <meta charset="utf-8">
+        <meta name="author" content="Javiera Craig">
+        <title>ASESORIA DE CALIDAD</title>
+        <meta name="description" content="Asociación para la promoción del uso sostenible de los recursos forestales">
+        <link rel="icon" type="image/png" sizes="32x32" href="imagenes/logocalidad-removebg-preview.png">
+        <html lang="es-ES"></html>
+        <meta name="viewport" content="width=device-width">
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    </head>
 
-</head>
 <body>
-    <Style>:root {
+
+<Style>
+:root {
     --text-01: #45413E;
     --light-01: #F9F9F9;
     --light-02: #FFFFFF;
@@ -24,136 +34,1244 @@
 
 
 }
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,400i,500,500i,600,700,800,900');
+@import url('https://fonts.googleapis.com/css?family=Cabin:400,400i,500,500i,600,600i,700,700i');
 
 * {
     box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
+   }
+
+
+a {
+    text-decoration: none;
+    color: #333333;
+  }
+
+h1 {
+    font-size: 2rem;
+     }
+
+h2 {
+    font-size: 1.75rem;
+  }
+
+h3 {
+    font-family: "Cabin";
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #333;
+   }
+
+h4 {
+    font-size: 1.25rem;
+  }
+
+h5 {
+    font-size: 1.125rem;
+  }
+
 
 body {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 500;
-    transition: var(--hover-timing);
-
-    background: var(--light-01);
-	
-	width: 100vw;
-	overflow-x: hidden;
-
-}
-
-header {
-    /*    width: 100%;*/
+    margin: 0;
+    padding: 0;
+    font-family: "Cabin", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    width: auto;
     height: auto;
-    position: sticky;
-    top: 0;
-    /*    border: 1px solid red;*/
-    z-index: 100;
 }
+    header {
+            background-color: white;
+            background-image: url('imagenes/fondo_pagina_home.png');
+            background-size: cover;
+            background-attachment: fixed;
+            padding: 0;
+            width: 100%;
+            min-height: 25vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+                      font-weight: bold; /* Texto en negrita */
 
-.banner {
-    background: var(--brand-01);
-    color: white;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 1.2;
-    padding: 8px 24px;
+        }
+
+        .header-content {
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.4);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 80%;
+            max-width: 800px;
+            position: relative;
+            z-index: 1;
+            text-align: center;
+        }
+
+        header h4 {
+            position: relative;
+            color:black;
+            font-weight: lighter;
+            font-size: 2.7vw;
+            margin: 0;
+            left: 5%;
+        }
+
+  header h6 {
+        color: black;
+        font-weight: lighter;
+        font-size: 1.5vw;
+        margin: 20px 0 0 0; /* Añadir margen superior para separar del h4 */
+        position: relative;
+        right: 0; /* Centramos de nuevo quitando el desplazamiento */
+    }
+        header button {
+            background-color: #228B22;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1.2vw;
+            cursor: pointer;
+            margin-top: 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        header button:hover {
+            background-color: #34a075;
+        }
+
+.nav-desktop {
+    background-color: black;
+    padding: 10px;
+    width: 100%;
+    min-height: 48px;
     display: flex;
+    flex-direction: row;
     align-items: center;
-    justify-content: center;
-
 }
 
-nav {
+@media screen and (max-width: 850px) {
+    .nav-desktop {
+        display: none;
+    }
+}
+
+.nav-logo {
+    /*5background-color: aqua;*/
+    padding: 0 0 0 25px;
+    width: auto;
+    height: 28px;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s;
+}
+
+.nav-logo:hover {
+    transform: translate(0, 0) scale(1.04);
+    transform-origin: center bottom;
+}
+
+.nav-logo svg:hover {
+    box-shadow: 5px 10px 10px rgba(56, 56, 56, 1);
+}
+
+.nav-separator {
+    margin: 0 15px;
+    background-color: #333333;
+    display: flex;
+    width: 1px;
+    height: 1.5em;
+}
+
+.nav-desktop ul {
+    padding: 0 20px 0 0;
+    /*background-color: aquamarine;*/
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    align-self: right;
+    min-height: inherit;
+    margin: 0 0 0 auto;
+  }
+
+.nav-desktop li {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+  }
+
+.feat-link a {
+        color: white;
+
+    padding: 5px 15px;
+    font-size: 20px;
+    font-weight: 500;
+    display: flex;
+    border-style: 1px solid black;
+    transition: all 0.3s;
+    transition-timing-function: ease;
+
+  }
+
+.feat-link a:hover {
+    box-shadow: 2.5px 4px rgb(51, 51, 51);
+    transform: translate(-2px, -2px);
+    border-style: 1px solid black;
+    /* font-weight: 600; */
+  }
+
+.grey-link a {
+    padding: 5px 15px;
+    font-size: 22px;
+    font-weight: 400;
+    display: flex;
     color: white;
-    font-weight: 700;
-    height: 64px;
-    background: black;
+    transition: all 0.3s;
+    transition-timing-function: ease-out;
+    /*align-items: center;*/
+  }
+
+.grey-link a:hover {
+    /* font-weight: 500; */
+    box-shadow: 2.5px 4px rgb(63, 178, 139);
+    transform: translate(0, -2px);
+  }
+
+.nav-responsive {
+    background-color: white;
+    padding: 10px 15px;
+    width: 100vw;
+    min-height: 48px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 0 var(--pg-margin);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-    z-index: 100;
-
 }
 
-nav ul.navigation-menu {
+
+.nav-logo-resp {
+    background-image: url(assets/icons/errotuz_logo_resp.svg);
+    /* background-color: #333; */
+    height: 32px;
+    width: 31px;
+    background-size: contain;
+    background-repeat: no-repeat;
     display: flex;
-    flex-direction: row;
-    flex: 1;
-    justify-content: center;
-    position: relative;
-    top: 0;
+    z-index: 2;
 }
 
-nav .navigation-menu a {
-    font-size: 16px;
-    text-decoration: none;
-    color: white;
+/* .nav-logo-resp a {
+    display: flex;
+} */
 
-}
-
-nav .navigation-menu > li {
+.hamburger {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #f1f1f1;
+    height: 21px;
+    width: 32px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    /*    justify-items: center;*/
+    align-content: space-between;
+    cursor: pointer;
 }
 
-nav .navigation-menu > li > a {
-    position: relative;
-    /*    border: 1px solid purple;*/
-    padding: 0 20px;
-    height: 64px;
-    display: flex;
-    align-items: center;
-    justify-items: center;
+.rectangle {
+  display: flex;
+  background-color: #bbbbbb;
+  height: 4px;
+  width: 100%;
 }
 
-nav .navigation-menu > li:hover ul.subnav {
-    visibility: visible;
-    opacity: 1;
-    top: 64px;
-
-}
-
-
-nav .navigation-menu > li > ul.subnav {
-    /*    border: 1px solid green;*/
-    visibility: hidden;
+.dropdown-menu {
+    background-color: #f0f0f0;
+    padding: 16px;
+    width: 100%;
     position: absolute;
     display: flex;
-    flex-direction: row;
-    top: 66px;
-    background: var(--light-01);
-    box-shadow: var(--card-hover);
-    border-radius: 12px;
+    flex-direction: column;
+    pointer-events: none;
     opacity: 0;
-    transition: var(--hover-timing);
+    transition: all 0.2s;
+    transition-timing-function: ease-out;
+}
+
+.dropdown-menu.visible {
+    background-color: #fff;
+    box-shadow: 4px 12px 20px rgba(3, 38, 43, 0.164); 
+    padding: 16px;
+    width: 100%;
+    position: absolute;
+    opacity: 1;
+    z-index: 4;
+    display: flex;
+    justify-content: center;
+    transition: all 0.2s;
+    transition-timing-function: ease-out;
+    pointer-events: unset;
+}
+
+@media screen and (min-width: 850px) {
+    .nav-responsive {
+        display: none;
+    }
+
+    .dropdown-menu.visible {
+        display: none;
+    }
+
+}
+
+.dropdown-menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.dropdown-menu li {
+    padding: 12px 0;
+    text-align: center;
+    width: 100%;
+}
+
+.dropdown-menu li:active {
+    background-color: #3fb28b;
+}
+
+.dropdown-menu li:active a {
+    color: white;
+}
+
+section {
+    padding: 32px auto;
+    display: flex;
+    justify-content: center;
+    height: auto;
+
+}
+
+section.featured {
+    position: relative;
+    padding: 0 0 64px 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 55vh;
+    justify-content: center;
+    overflow: hidden; /* Asegura que los degradados no desborden la sección */
+}
+
+section.featured::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Asegura que esté detrás del contenido */
+    background: linear-gradient(to bottom right, #01284e 50%, transparent 50%);
 }
 
 
-nav > #logo {
+
+
+
+.card-container {
+    /*background-color: gray;*/
+    margin: 10px auto;
+    width: 1000px;
+    max-width: 1040px;
+    height: auto;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     align-items: center;
-    grid-gap: 8px;
-    line-height: 100%;
 }
 
-nav > #logo > span {
-    font-size: 32px;
+
+.title-container {
+    color: white;
+        background-color: rgb(1, 40, 78,0.7); /* Fondo oscuro para contraste */
+
+    margin: 64px auto; /* Centramos el contenedor horizontalmente */
+    padding: 20px; /* Añadimos espacio alrededor del contenido */
+    width: 80%; /* Hacemos el contenedor un poco más ancho */
+    max-width: 960px; /* Limite máximo de anchura */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra sutil para profundidad */
+    text-align: center; /* Centrar el texto */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-nav > #utility {
+
+.title-container h3 {
+    margin: 0 auto 0 0;
+    display: inline-flex;
+    color: #333;
+}
+
+.card {
+   /* margin: 20px;*/
+    background-color: honeydew;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: nowrap;
+    width: 288px;
+    height: 304px;
+    box-shadow: 5px 5px 20px rgba(75, 72, 78, 0.25);
+    overflow: hidden;
+    transform: translate(0, 0);
+    transition: 0.3s;
+    transition-timing-function: ease-out;
+}
+
+.card:hover {
+    transform: translate(0, -8px);
+
+}
+
+.card-inv {
+    background-image: url(imagenes/elefante.jpg);
+    background-size: cover;
+}
+
+.card-edu {
+    background-image: url(imagenes/delicado-colibri-agraciado-pajaro-sobre-fondo-blanco_942932-1353.png);
+    background-size: cover;
+
+}
+
+.card-ases {
+    background-image: url(imagenes/aguila.jpg);
+    background-size: cover;
+    background-position: right;
+
+}
+
+.card-summary {
+    background-color: rgba(255,255,255,1);
+    padding: 0px 10px 5px 10px;
+    /* filter: grayscale(100%);*/
+    /*fill-opacity: 50%;*/
+    mix-blend-mode: hard-light;
+    width: 100%;
+    height: auto;
+    position: relative;
+    text-overflow: ellipsis;
+    transform: translate(0,94px);
+    line-height: 24px;
+    transition: 0.3s;
+    transition-timing-function: ease;
+    display: inline-block;
+}
+
+.card-summary h4 {
+    line-height: 1em;
+    padding: 0px;
+    margin: 16px 0;
+  }
+
+
+.card:hover .card-summary {
+    transform: translate(0, 0);
+  }
+
+
+
+
+p.small {
+    font-size: 0.875rem;
+
+}
+
+.cta-main {
+    /*background-color: #3fb28b;*/
+    background-image: linear-gradient(-64deg, #3ac093, #15e2c7);
+    margin: 64px auto;
+    padding: 16px 30px;
+    height: 48px;
+    width: auto;
+    border-radius: 24px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    transform: translate(0, 0);
+    transition: 0.3s;  
+}
+
+.cta-main:hover {
+    box-shadow: 5px 5px 20px rgba(7, 131, 110, 0.25);
+    transform: translate(0, -5px);
+    background-image: linear-gradient(-34deg, #3ac093, #15e2c7);
+}
+
+.cta-text {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #fff;
+    letter-spacing: 0.6px;
+}
+
+@media screen and (max-width: 970px) {
+    
+    .title-container {
+    
+        padding: 0;
+        text-align: center;
+        width: 100%;
+        /* max-width: unset; */
+        margin: 32px auto;
+    }
+
+    .card-container {
+        /*background-color: #bbbbbb;*/
+        flex-direction: column;
+        width: 80vw;
+        justify-content: space-around;
+    }
+
+    .card {
+        margin: 16px 0;
+    }
+}
+
+
+#LOGO{
+width: 30%;
+height: auto;
+
+}
+
+
+        .container--redes{
+  width:400px;
+  left:0;
+  position:fixed;
+  top:25%;
+    z-index: 9999; /* Valor alto para asegurar que esté por encima de todo */
+
+  }
+
+
+
+.icon{
+  top:50%;
+  position:relative;
+  margin-bottom:10px;
+  }
+
+
+.icon-primary{
+  display:inline-block;
+  text-decoration:none;
+  color:#fff;
+  background-color:#3b5998;
+  border-radius:100%;
+  position:relative;
+  z-index:1;
+  box-shadow:1px 0 1px rgba(0,0,0,.5);
+  height:40px;
+  width:40px;
+  text-align:center;
+  line-height:40px;
+  }
+
+.container-description{
+  overflow:hidden;
+  position:absolute;
+  top:0;
+  left:24px;
+
+}
+
+.icon-description{
+  width:250px;
+  display:inline-block;
+  text-decoration:none;
+  color:#fff;
+  background-color:#3b5998;
+  height:40px;
+  line-height:40px;
+  padding-left:40px;
+  border-radius:0 20px 20px 0;
+  transform: translate3d(-110%, 0, 0);
+  transition:transform 175ms ease;
+}
+
+.icon-primary:hover  ~ .container-description .icon-description{
+     transform: translate(0, 0);
+  
+}
+
+/*colores para redes sociales*/
+.color-twitter{
+  background-color:white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.color-whatsapp {
+
+  background-image: url('imagenes/whatsapp.png');
+  /* Ajusta el tamaño y otras propiedades del fondo según sea necesario */
+  background-size: cover; /* Ajusta el tamaño del fondo */
+  display: inline-block; /* Para que el elemento <a> sea un bloque de tamaño adecuado */
+  width: 40px; /* Ancho del icono, ajusta según sea necesario */
+  height: 40px; /* Alto del icono, ajusta según sea necesario */
+  text-indent: -9999px; /* Oculta el texto dentro del enlace, mostrando solo el fondo */
+  font-size: 0; /* Ajusta el tamaño de la fuente a cero para ocultar cualquier texto visible */
+}
+
+
+
+
+.color-whatsapp-text {
+    position: relative; /* Establece posición relativa para permitir superposición */
+    display: inline-block;
+    padding: 10px 15px;
+    color: #fff;
+    background-image: url('imagenes/whatsapp.png');
+    background-size: cover;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    overflow: hidden; /* Oculta cualquier desbordamiento del contenido */
+}
+
+.color-whatsapp-text span {
+    position: relative; /* Establece posición relativa para permitir superposición */
+    z-index: 1; /* Asegura que el texto esté por encima del fondo */
+}
+
+
+
+
+
+
+.color-gmail {
+
+    background-image: url('imagenes/gmail.png');
+  /* Ajusta el tamaño y otras propiedades del fondo según sea necesario */
+  background-size: cover; /* Ajusta el tamaño del fondo */
+  display: inline-block; /* Para que el elemento <a> sea un bloque de tamaño adecuado */
+  width: 40px; /* Ancho del icono, ajusta según sea necesario */
+  height: 40px; /* Alto del icono, ajusta según sea necesario */
+  text-indent: -9999px; /* Oculta el texto dentro del enlace, mostrando solo el fondo */
+  font-size: 0; /* Ajusta el tamaño de la fuente a cero para ocultar cualquier texto visible */
+}
+
+
+
+
+
+.color-gmail-text {
+    position: relative; /* Establece posición relativa para permitir superposición */
+    display: inline-block;
+    padding: 10px 15px;
+    color: #fff;
+    background-size: cover;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    overflow: hidden; /* Oculta cualquier desbordamiento del contenido */
+}
+
+.color-gmail-text span {
+    position: relative; /* Establece posición relativa para permitir superposición */
+    z-index: 1; /* Asegura que el texto esté por encima del fondo */
+}
+
+  #fotoo {
+            border-radius: 18px;
+            width: 70%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+            border: 5px solid white; /* Borde */
+            transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición para la animación */
+        }
+
+        #fotoo:hover {
+            transform: scale(1.05); /* Aumenta el tamaño ligeramente */
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Sombra más intensa al pasar el cursor */
+        }
+
+        /* Estilos de la sección de atención */
+        .attention {
+            position: relative;
+            left: 5%;
+            background: white;
+            padding: 4rem 0;
+        }
+
+        .attention .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+        }
+
+        .attention-text {
+            width: 60%;
+            padding: 0 1rem;
+            box-sizing: border-box;
+        }
+
+        .attention-text h2 {
+            font-size: 2.5rem;
+            color: #333;
+            margin-bottom: 1rem;
+        }
+
+        .attention-text h4 {
+            font-size: 2rem;
+            color: #333;
+            margin-bottom: 1rem;
+        }
+
+        .attention-text ul {
+            list-style-type: disc;
+            padding-left: 1.5rem;
+        }
+
+        .attention-text p {
+            font-size: 1.125rem;
+            color: #666;
+        }
+
+        .attention-image {
+            width: 40%;
+            padding: 0 1rem;
+            box-sizing: border-box;
+        }
+
+        /* Estilos para dispositivos móviles */
+        @media (max-width: 768px) {
+            .attention .container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .attention-text,
+            .attention-image {
+                width: 100%;
+                padding: 0;
+            }
+
+            .attention-text {
+                margin-bottom: 2rem;
+            }
+        }
+     .cuadro-color {
+            width: 30%; /* Aumentado el ancho para mejor visibilidad */
+            position: absolute;
+            left: 30%;
+            transform: translateX(-50%); /* Centra el cuadro horizontalmente */
+            background-color: #228B22;
+            color: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra mejorada */
+            text-align: center;
+            z-index: 999;
+            border: 5px solid white; /* Borde mejorado */
+            transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición para la animación */
+        }
+
+        .cuadro-color:hover {
+            transform: translateX(-50%) scale(1.05); /* Escala al pasar el ratón */
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Sombra al pasar el ratón */
+        }
+
+        .cuadro-color h5 {
+            margin: 0; /* Elimina márgenes para un mejor ajuste del texto */
+            font-size: 18px; /* Tamaño de fuente ajustado */
+        }
+     #correos {
+            height: 40px; /* Ajusta la altura según sea necesario */
+            background-color: white      ;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 10px;
+            box-sizing: border-box;
+            color: black;
+            font-size: 14px;
+        }
+        .contacto-item {
+            display: flex;
+            align-items: center;
+        }
+        .contacto-item img {
+            width: 20px; /* Ajusta el tamaño de las imágenes según sea necesario */
+            height: 20px;
+            margin-right: 5px;
+        }
+        /* Añadir a tu CSS existente */
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* Verificar ancho del container--redes */
+.container--redes {
+    width: 100%; /* Asegúrate de que el contenedor no exceda el 100% del ancho */
+}
+
+/* Asegurarse de que los elementos dentro de nav-desktop no se desborden */
+.nav-desktop ul {
+    flex-wrap: nowrap; /* Evita el desbordamiento en las listas */
+}
+
+/* Ajustar anchos específicos si es necesario */
+header, .nav-desktop, .dropdown-menu {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+
+
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-section {
+        margin-bottom: 20px;
+    }
+}
+.clients {
+    background: #fff; /* Cambia el color de fondo según tu diseño */
+    padding: 4rem 0;
+}
+
+.clients .container {
+    text-align: center;
+}
+
+.clients h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.client-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Ajusta el número de columnas según tu diseño */
+    gap: 20px;
+}
+
+.client-item img {
+    max-width: 100%;
+    height: auto;
+}
+/* Asegúrate de que el contenedor de la imagen ocupe todo el ancho y no tenga padding ni margen */
+      .full-width-section {
+          
+            width: 100vw; /* Hace que el section ocupe todo el ancho de la pantalla */
+            padding: 0;   /* Elimina cualquier padding por defecto */
+            margin: 0;    /* Elimina cualquier margin por defecto */
+        }
+
+        .full-width-image {
+              position: relative;
+            right: 5%;
+            width: 100vw; /* Asegura que la imagen ocupe todo el ancho de la pantalla */
+            height: auto; /* Mantiene la proporción de la imagen */
+            display: block; /* Elimina cualquier espacio en línea alrededor de la imagen */
+        }
+
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100vw; /* Asegura que el body y html ocupen todo el ancho de la pantalla */
+            overflow-x: hidden; /* Evita el desplazamiento horizontal */
+        }
+
+footer {
+    background-color: #01284E;
+    color: white;
+    padding: 40px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-column {
+    flex: 1;
+    margin: 20px;
+    min-width: 250px;
+}
+
+.footer-column h4 {
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.footer-column p, .footer-column ul, .footer-column a {
+    font-size: 14px;
+    color: white;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+}
+
+.footer-column ul li a:hover {
+    color: #E58859;
+}
+
+.social-media {
+    display: flex;
+}
+
+.social-media a {
+    font-size: 20px;
+    margin-right: 10px;
+    color: white;
+    transition: color 0.3s;
+}
+
+.social-media a:hover {
+    color: #E58859;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    border-top: 1px solid #666;
+    padding-top: 20px;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+.publicidad {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: #DCDCDC;
+    padding: 50px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    overflow: hidden;
+    position: relative;
+}
+
+.publicidad::after {
+    content: '';
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 30px;
+    border-style: solid;
+    border-color: #DCDCDC transparent transparent transparent;
+}
+
+.imagen-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.contenido {
+    flex: 1;
+    padding-left: 30px;
+    color: black;
+    font-weight: bold;
+}
+
+.contenido h4 {
+    color: #01284e;
+    font-size: 30px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.contenido p {
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.contenido ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 25px;
+}
+
+.contenido li {
+    font-size: 20px;
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 20px;
+}
+
+.contenido li:before {
+    content: "\2022";
+    position: absolute;
+    left: 0;
+    color: #4CAF50;
+}
+
+.boton-solicitar {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    text-transform: uppercase;
+    transition: background-color 0.3s;
+}
+
+.boton-solicitar:hover {
+    background-color: #45a049;
+}
+
+
+    /* Estilos para el contenedor de la imagen */
+    .imagen-container {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        overflow: hidden;
+        margin-right: 30px;
+    }
+
+    .imagen-container img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 50%;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .imagen-container:hover img {
+        transform: scale(1.1);
+    }
+
+    .texto-bajo-imagen {
+        margin-top: 15px;
+    }
+
+    .texto-bajo-imagen h5 {
+        font-size: 20px;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+    }
+
+    .texto-bajo-imagen p {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+    *{
+
+  font-family: "Rubik", sans-serif;
+
+    }
+        #splash-screen {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      background-color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999; /* Asegura que esté al frente */
+    }
+    #splash-screen img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+
+    /* Estilos para el contenido principal (tu página) */
+    #main-content {
+      display: none; /* Oculta el contenido principal inicialmente */
+    }
+    
+
+
+
+.heroo {
+    position: relative;
+    top: 10px;
+    font-size: 40px;
+   
+    height: 400px; /* Ajusta la altura de la sección según tus necesidades */
+    background-image: url('imagenes/fondo_pagina_home.png'); /* Verifica la ruta de la imagen aquí */
+    background-repeat: no-repeat; /* Evita que la imagen de fondo se repita */
+    background-size: cover; /* Hace que la imagen de fondo cubra todo el contenedor */
+    background-position: center; /* Centra la imagen de fondo */
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    grid-gap: 48px; /* Ajusta el espacio entre elementos si es necesario */
+}
+
+
+.btn-group {
     display: flex;
     flex-direction: row;
-    align-items: center;
     grid-gap: 16px;
 }
+
+section.hero h1 {
+    font-size: var(--hero-text);
+    font-weight: 600;
+    line-height: 1.2;
+    width: 40%;
+
+    color: var(--text-01);
+}
+
+
+button {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 24px;
+    padding: 12px 24px;
+    border-radius: 48px;
+    display: flex;
+    flex-direction: row;
+    grid-gap: 8px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+
+button.btn-outline-light {
+    color: var(--light-01);
+    background: none;
+    color: var(--light-01);
+    border: 2px solid var(--light-01);
+}
+
+button.btn-outline-dark {
+    color: var(--text-01);
+    background: none;
+    color: var(--text-01);
+    border: 2px solid var(--text-01);
+}
+
+button.btn-filled-dark {
+    color: var(--light-01);
+    background: var(--text-01);
+    color: var(--light-01);
+    border: 2px solid var(--text-01);
+}
+
+.btn-outline-dark:hover {
+    background: var(--text-01);
+    border: 2px solid var(--text-01);
+}
+
+.btn-outline-light:hover {
+    background: var(--light-01);
+    border: 2px solid var(--light-01);
+    color: var(--text-01);
+}
+
+
+button:hover,
+.btn-outline-dark.btn-hover-color:hover {
+    color: var(--light-01);
+    border: 2px solid var(--brand-01);
+    background: var(--brand-01);
+    transition: var(--hover-timing);
+    box-shadow: var(--card-hover);
+}
+
+
+    .shop-pets,
+    .services {
+        display: flex;
+        flex-direction: row;
+        grid-gap: 24px;
+    }
+
+    nav ul.navigation-menu {
+        top: 0;
+        z-index: 1;
+        background: none;
+        width: auto;
+        position: relative;
+    }
+
+    ul.subnav {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-row: auto auto;
+        grid-column-gap: 24px;
+        grid-row-gap: 24px;
+        padding: 48px;
+    }
+    
+    .shop-pets,
+    .services {
+        display: flex;
+        flex-direction: column;
+        grid-gap: 24px;
+        width: 100%;
+    }
+
+    .services > li {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .services > li > .card-image {
+        width: 100%;
+    }
+
+    section:not(.hero) {
+        padding: var(--pg-margin);
+    }
 
 .card-large,
 .card-med {
@@ -359,1277 +1477,81 @@ button:hover,
 }
 
 
-section,
-footer {
-    position: relative;
-    width: 100%;
-    padding: 0 var(--pg-margin);
-}
+
+</style>
 
 
+  <div id="splash-screen">
+    <img src="imagenes/logocalidad-removebg-preview.png" alt="Pantalla de Bienvenida">
+  </div>
 
-
-.heroo {
-    position: relative;
-    top: 10px;
-    font-size: 40px;
-   
-    height: 400px; /* Ajusta la altura de la sección según tus necesidades */
-    background-image: url('imagenes/fondo_pagina_home.png'); /* Verifica la ruta de la imagen aquí */
-    background-repeat: no-repeat; /* Evita que la imagen de fondo se repita */
-    background-size: cover; /* Hace que la imagen de fondo cubra todo el contenedor */
-    background-position: center; /* Centra la imagen de fondo */
+    <section id="correos">
+        <div class="contacto-item">
+            <img src="imagenes/gmail.png" alt="Correo">
+            <h5 id="micorreo">Normas.gestion@gmail.com</h5>
+        </div>
+        <div class="contacto-item">
+            <img src="imagenes/llamada.png" alt="Teléfono">
+            <span>3165362193</span>
+        </div>
+    </section>
+<nav class="nav-responsive">
+    <a href="index.html">
+        <div class="nav-logo-resp">
+        </div>
+    </a> 
+    <div class="hamburger">
+        <div class="rectangle">
+        </div>
+        <div class="rectangle">
+        </div>
+        <div class="rectangle">
+        </div>
+    </div>      
+</nav>
     
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    grid-gap: 48px; /* Ajusta el espacio entre elementos si es necesario */
-}
-
-
-
-
-.btn-group {
-    display: flex;
-    flex-direction: row;
-    grid-gap: 16px;
-}
-
-section.hero h1 {
-    font-size: var(--hero-text);
-    font-weight: 600;
-    line-height: 1.2;
-    width: 40%;
-
-    color: var(--text-01);
-}
-
-.card-med {
-    width: var(--nav-card-size);
-    height: auto;
-    /*    border: 1px solid green;*/
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    padding: 0;
-}
-
-.card-med > a {
-    display: flex;
-    flex-direction: column;
-    grid-gap: 4px;
-    padding: 12px 16px 0px;
-}
-
-.card-med > a > span {
-    width: 10%;
-    /*    border: 1px solid blue;*/
-}
-
-.card-med > a > span:nth-of-type(1) {
-        color: black;
-
-    width: 5%;
-    /*    border: 1px solid blue;*/
-    font-size: 24px;
-    font-weight: 600;
-    line-height: 1.2;
-}
-
-.card-med > a > span:nth-of-type(2) {
-    color: black;
-    font-size: 25px;
-    font-weight: 10px;
-
-    line-height: 10px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    grid-gap: 6px;
-}
-
-.card-med > a > span:nth-of-type(2) > span {
-    font-size: 15px;
-}
-
-#serv-groom > .card-image {
-    background: linear-gradient(45deg, #45828C 0%, #A7D4D8 100%);
-}
-
-#serv-board > .card-image {
-    background: linear-gradient(45deg, #EDDAA9 0%, #B87D93 100%);
-}
-
-.card-med:hover .card-image {
-    box-shadow: var(--card-hover);
-}
-
-
-.card-med > .card-image {
-    box-shadow: var(--card-shadow);
-}
-
-.card-med > .card-image > img {
-    width: 80%;
-    height: 80%;
-    /*    border: 1px solid red;*/
-}
-
-section:not(.hero) {
-    padding: calc(var(--pg-margin)/2) var(--pg-margin);
-}
-
-section h2 {
-    font-size: 32px;
-    font-weight: 600;
-    line-height: 1.2;
-    text-align: center;
-    color: var(--text-01);
-    margin-bottom: 32px;
-    /*    padding-bottom: 24px;*/
-}
-
-
-.card-wide {
-    flex-direction: row;
-    padding: 0;
-}
-
-.card-wide .card-image {
-    width: 50%;
-    border-radius: 0;
-}
-
-.card-image img {
-    width: 80%;
-    height: 80%;
-}
-
-.card-wide > ul {
-    padding: 40px;
-}
-
-.card-wide > ul > li {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    grid-gap: 24px;
-    margin-bottom: 16px;
-}
-
-
-.card-wide .subtitle {
-    font-size: 14px;
-    line-height: 1.4;
-    font-weight: 500;
-    /*    margin-top: 8px;*/
-    margin-bottom: 24px;
-}
-
-.card-wide > ul > li span {
-    font-size: 16px;
-}
-
-.card-large > ul > li:last-of-type {
-    margin-bottom: 40px;
-}
-
-
-.card-large button {
-    margin-top: auto;
-}
-
-#locate > div {
-    background: var(--brand-02);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 80px 0;
-    border-radius: 12px;
-    box-shadow: var(--card-shadow);
-    transition: var(--hover-timing);
-    cursor: pointer;
-}
-
-#locate > div:hover {
-    box-shadow: var(--card-hover);
-}
-
-#locate h2 {
-    margin-top: 0;
-}
-
-#locate p {
-    line-height: 1.5;
-    margin-bottom: 40px;
-    width: 50%;
-    text-align: center;
-}
-
-
-.btn-group {
-    display: flex;
-    flex-direction: row;
-    grid-gap: 16px;
-}
-
-footer {
-    background: var(--text-01);
-    padding: 80px 80px 0px;
-    margin-top: 80px;
-    display: flex;
-}
-
-
-
-footer ul {
-    display: flex;
-    flex-direction: column;
-    grid-gap: 24px;
-    box-shadow: none;
-    flex: 1;
-    color: var(--light-01);
-    font-size: 18px;
-    font-weight: 600;
-    margin-bottom: 80px;
-
-}
-
-
-footer ul li a {
-    color: var(--light-01);
-    text-decoration: none;
-    font-size: 14px;
-}
-
-
-footer ul li {
-    color: var(--light-01);
-    padding: 0;
-
-}
-
-
-
-@media only screen and (max-width: 600px) {
-    :root {
-        --pg-margin: 16px;
-    }
-
-    section.hero {
-        aspect-ratio: 1/1;
-        padding-top: 64px;
-
-    }
-
-    section.hero h1 {
-        --hero-text: 40px;
-        width: 80%;
-    }
-
-
-
-    nav {
-        position: relative;
-    }
-
-    nav ul.navigation-menu {
-        position: absolute;
-        position: absolute;
-        top: 64px;
-        background: var(--light-01);
-        left: 0;
-        z-index: -1;
-        width: 100vw;
-    }
-
-    nav ul.navigation-menu li a {
-        font-size: 16px;
-        /*        padding: 0 12px;*/
-        white-space: nowrap;
-    }
-
-    nav ul.navigation-menu .subnav {
-        display: none;
-    }
-
-    nav ul.navigation-menu > li:hover .subnav {
-        display: none;
-    }
-
-
-    .btn-group {
-        flex-direction: column;
-    }
-
-    .shop-pets,
-    .services {
-        display: flex;
-        flex-direction: column;
-        grid-gap: 24px;
-        width: 100%;
-    }
-
-    .services > li {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .services > li > .card-image {
-        width: 100%;
-    }
-
-    section:not(.hero) {
-        padding: var(--pg-margin);
-    }
-
-    #locate p {
-
-        width: 80%;
-    }
-
-    footer {
-        flex-direction: column;
-        text-align: center;
-    }
-
-
-}
-
-@media only screen and (min-width: 600px) {
-    :root {
-        --pg-margin: 24px;
-    }
-
-    section.hero h1 {
-        --hero-text: 40px;
-        width: 60%;
-    }
-
-    section.hero {
-        aspect-ratio: 3/2;
-        background-size: 50%;
-        background-position: 90% 70%;
-        padding-top: 64px;
-
-    }
-
-    nav {
-        position: relative;
-
-    }
-
-    nav ul.navigation-menu {
-        position: absolute;
-        top: 64px;
-        background: var(--light-01);
-        left: 0;
-        z-index: -1;
-        width: 100vw;
-    }
-
-    nav ul.navigation-menu li a {
-        font-size: 16px;
-        white-space: nowrap;
-    }
-
-    nav ul.navigation-menu .subnav {
-        display: none;
-    }
-
-    nav ul.navigation-menu > li:hover .subnav {
-        display: none;
-    }
-
-    .btn-group {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .shop-pets {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-row: auto auto;
-        grid-column-gap: 24px;
-        grid-row-gap: 24px;
-    }
-
-    .services {
-        display: flex;
-        flex-direction: column;
-        grid-gap: 24px;
-    }
-
-    section:not(.hero) {
-        padding: var(--pg-margin);
-    }
-
-    #locate p {
-
-        width: 60%;
-    }
-
-    footer {
-        flex-direction: column;
-        text-align: center;
-    }
-}
-
-@media only screen and (min-width: 1200px) {
-    :root {
-        --pg-margin: 48px;
-    }
-
-    section.hero h1 {
-        --hero-text: 48px;
-    }
-
-    section.hero {
-        aspect-ratio: 2/1;
-
-    }
-
-    .btn-group {
-        flex-direction: row;
-    }
-
-    .shop-pets,
-    .services {
-        display: flex;
-        flex-direction: row;
-        grid-gap: 24px;
-    }
-
-    ul.subnav {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-row: auto auto;
-        grid-column-gap: 24px;
-        grid-row-gap: 24px;
-        padding: 48px;
-    }
-
-
-    nav ul.navigation-menu {
-        top: 0;
-        z-index: 1;
-        background: none;
-        width: auto;
-        position: relative;
-    }
-
-    nav ul.navigation-menu .subnav {
-        display: flex;
-    }
-
-    nav ul.navigation-menu > li:hover .subnav {
-        display: flex;
-    }
-
-    #locate p {
-
-        width: 40%;
-    }
-
-    footer {
-
-
-        flex-direction: row;
-        text-align: left;
-
-    }
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-    :root {
-        --pg-margin: 80px;
-    }
-
-    section.hero h1 {
-        --hero-text: 56px;
-    }
-
-    nav .navigation-menu > li > ul.subnav {
-        padding: 48px;
-        grid-gap: 24px;
-    }
-
-    section.hero {
-        aspect-ratio: 3/1;
-        background-size: 30%;
-        background-position: 90% 60%;
-    }
-
-    .shop-pets,
-    .services {
-        display: flex;
-        flex-direction: row;
-        grid-gap: 24px;
-    }
-
-    nav ul.navigation-menu {
-        top: 0;
-        z-index: 1;
-        background: none;
-        width: auto;
-        position: relative;
-    }
-
-    ul.subnav {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-row: auto auto;
-        grid-column-gap: 24px;
-        grid-row-gap: 24px;
-        padding: 48px;
-    }
-
-    nav ul.navigation-menu > li:hover .subnav {
-        display: grid;
-    }
-
-    #locate p {
-
-        width: 40%;
-    }
-
-    footer {
-
-
-        flex-direction: row;
-        text-align: left;
-
-    }
-
-}
-#logo{
-    position: relative;
-
-top: 10px;   width:100px;
-}
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap");
-
-html,
-body {
-	width: 100%;
-	height: 100%;
-	// background: #393e41;
-	font-family: "Montserrat", sans-serif;
-}
-
-.centered {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	gap: 3rem;
-	height: 100%;
-}
-
-.card {
-	position: relative;
-	height: 28rem;
-	width: 20rem;
-	aspect-ratio: 5 / 7;
-	color: #ffffff;
-	perspective: 50rem;
-	
-	.shadow {
-		position: absolute;
-		inset: 0;
-		background:
-			var(--url);
-		background-size: cover;
-		background-position: center;
-		opacity: 0.8;
-		filter: blur(2rem) saturate(0.9);
-		box-shadow: 0 -1.5rem 2rem -0.5rem rgba(0, 0, 0, 0.7);
-		transform: rotateX(var(--rotateX)) rotateY(var(--rotateY))
-				translate3d(0, 2rem, -2rem);
-	}
-
-	.image {
-		position: absolute;
-		inset: 0;
-		background: linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent 40%),
-			var(--url);
-		background-size: cover;
-		background-position: center;
-		mask-image: var(--url);
-		mask-size: cover;
-		mask-position: center;
-
-		&.background {
-			transform: rotateX(var(--rotateX)) rotateY(var(--rotateY))
-				translate3d(0, 0, 0rem);
-		}
-
-		&.cutout {
-			transform: rotateX(var(--rotateX)) rotateY(var(--rotateY))
-				translate3d(0, 0, 4rem) scale(0.92);
-			z-index: 3;
-		}
-	}
-
-	.content {
-		position: absolute;
-		display: flex;
-		flex-direction: column;
-		justify-content: flex-end;
-		inset: 0;
-		padding: 3.5rem;
-
-		transform: rotateX(var(--rotateX)) rotateY(var(--rotateY))
-			translate3d(0, 0, 6rem);
-		z-index: 4;
-	}
-
-	&::after,
-	&::before {
-		content: "";
-		position: absolute;
-		inset: 1.5rem;
-		border: #e2c044 0.5rem solid;
-		transform: rotateX(var(--rotateX)) rotateY(var(--rotateY))
-			translate3d(0, 0, 2rem);
-	}
-
-	&::before {
-		z-index: 4;
-	}
-	
-	&.border-left-behind::before {
-		border-left: transparent;
-	}
-	
-	
-	&.border-right-behind::before {
-		border-right: transparent;
-	}
-	
-	&.border-bottom-behind::before {
-		border-bottom: transparent;
-	}
-}
-
-h2 {
-	font-size: 1.25rem;
-	font-weight: 700;
-	margin-bottom: 0.5rem;
-	text-shadow: 0 0 2rem rgba(0, 0, 0, 0.5);
-}
-
-p {
-	font-weight: 300;
-	text-shadow: 0 0 2rem rgba(0, 0, 0, 0.5);
-}
-#verto {
-    padding: 20px;
-
-    align-items: center;
-    position: relative;
-    background-color: black;
-    color: white;
-    width: 100%;
-    text-decoration: none;
-    display: inline-block;
-    text-align: center;
-    border-radius: 10px;
-    transition: background-color 0.3s, transform 0.3s;
-}
-
-#verto:hover {
-    background-color: darkgray;
-    transform: scale(1.05);
-}
-#verto:active {
-    transform: scale(0.95);
-}
-#verto {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-}
-#verto {
-    font-family: 'Arial', sans-serif;
-    font-size: 18px;
-}
-    /* Estilos del pie de página */
-        footer {
-        
-            background-color: #222;
-            color: #fff;
-            padding: 40px 0;
-        }
-
-        .social-links {
-       
-            display: flex;
-            justify-content: center;
-            margin-bottom: 20px;
-        }
-
-        .social-links a {
-                 left: 700px;
-            align-items: center;
-            position: relative;
-            margin-right: 20px;
-        }
-
-        .social-links img {
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-        }
-
-        footer p {
-                             left: 700px;
-            align-items: center;
-            position: relative;
-            margin-top: 20px;
-            font-size: 14px;
-            text-align: center;
-        }
-                /* Estilos de la sección de clientes */
-.clients {
-    background: #fff; /* Cambia el color de fondo según tu diseño */
-    padding: 4rem 0;
-}
-
-.clients .container {
-    text-align: center;
-}
-
-.clients h2 {
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
-}
-
-.client-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Ajusta el número de columnas según tu diseño */
-    gap: 20px;
-}
-
-.client-item img {
-    max-width: 100%;
-    height: auto;
-}
-
-        .contact {
-            background-color: #ffffff;
-            padding: 40px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            max-width: 600px;
-            margin: 40px auto;
-            font-family: 'Arial', sans-serif;
-        }
-
-        .contact h2 {
-            text-align: center;
-            color: #333;
-            margin-bottom: 30px;
-            font-size: 28px;
-            font-weight: 600;
-        }
-
-        .contact label {
-            display: block;
-            margin-bottom: 8px;
-            color: #555;
-            font-weight: 600;
-            font-size: 16px;
-        }
-
-        .contact input[type="text"],
-        .contact input[type="email"],
-        .contact textarea {
-            width: 100%;
-            padding: 12px;
-            margin-bottom: 20px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            box-sizing: border-box;
-            font-size: 16px;
-            background-color: #f9f9f9;
-            transition: all 0.3s ease;
-        }
-
-        .contact input[type="text"]:focus,
-        .contact input[type="email"]:focus,
-        .contact textarea:focus {
-            border-color: #007BFF;
-            background-color: #fff;
-            box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
-            outline: none;
-        }
-
-        .contact textarea {
-            height: 150px;
-            resize: vertical;
-        }
-
-        .contact .btn {
-            display: block;
-            width: 100%;
-            padding: 15px;
-            border: none;
-            border-radius: 5px;
-            background-color: #007BFF;
-            color: #fff;
-            font-size: 18px;
-            font-weight: 600;
-            cursor: pointer;
-            transition: background-color 0.3s ease, transform 0.3s ease;
-        }
-
-        .contact .btn:hover {
-            background-color: #0056b3;
-            transform: translateY(-2px);
-        }
-
-        .contact .btn:active {
-            background-color: #003f7f;
-            transform: translateY(0);
-        }
-     
-        .golden {
-            color: gold; /* Color dorado */
-        }
-/* Estilos para el encabezado y la navegación */
-
-
-
-
-nav {
-    height: 100px;
-    padding: 10px;
-    display: flex;
-    justify-content: space-between; /* Coloca los elementos a los extremos */
-    align-items: center; /* Centra verticalmente los elementos */
-}
-
-#logo {
- 
-        margin-right: 105px; /* Espaciado a la derecha del logo */
-
-    display: flex;
-    align-items: center; /* Centra verticalmente los elementos dentro de #logo */
-}
-
-#logo img {
-    
-    width: 150px; /* Ajusta el tamaño del logo según sea necesario */
-    margin-right: 105px; /* Espaciado a la derecha del logo */
-}
-
-
-.golden {
-    font-size: 22px;
-    color: gold; /* Color dorado para el texto */
-    font-weight: bold; /* Negrita para el texto */
-}
-
-
-
-/* Estilos para el menú principal */
-.navigation-menu {
-    display: flex;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-.navigation-menu li {
-    margin: 0; /* Quita todas las márgenes */
-}
-
-.navigation-menu li a {
-    text-decoration: none;
-    color: white; /* Color del texto del enlace */
-    padding: 10px; /* Agrega espacio interno para los enlaces */
-    display: block; /* Hace que los enlaces ocupen todo el ancho disponible */
-}
-
-/* Estilos para el menú desplegable */
-.subnav {
-    display: none;
-    position: absolute;
-    background-color: #fff; /* Color de fondo */
-    box-shadow: 0 8px 16px rgba(0,0,0,0.1); /* Sombra */
-    padding: 0; /* Quita el espacio interno */
-    margin: 0; /* Quita las márgenes */
-}
-
-.subnav li {
-    display: block;
-    padding: 10px;
-}
-
-.subnav li:hover {
-    background-color: #f0f0f0; /* Color de fondo al pasar el ratón */
-}
-
-.subnav a {
-    color: white; /* Color del texto */
-    text-decoration: none;
-}
-
-/* Estilos para los íconos de flecha */
-.material-symbols-outlined {
-    vertical-align: middle; /* Alinea verticalmente */
-    margin-left: 5px; /* Espacio a la izquierda */
-}
-
-#logooo{
-position: relative;
-right: -90px;
-
-    width: 100px;
-}
-      #fotoo{
-border-radius: 18px;
-            width: 500px;
-
-
-        }
-        /* Estilos de la sección de atención */
-        .attention {
-            background: white;
-            padding: 4rem 0;
-        }
-
-        .attention .container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .attention-text {
-            width: 60%;
-        }
-
-        .attention-text h2 {
-            font-size: 2.5rem;
-            color: #333;
-            margin-bottom: 1rem;
-        }
-
-        .attention-text p {
-            font-size: 1.125rem;
-            color: #666;
-        }
-
-        .attention-image {
-            width: 30%;
-        }
-
-        /* Estilos de la sección de asistencia */
-        #asistencia .container {
-            position: relative;
-            padding: 10px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        #asistencia .text-container {
-            max-width: 70%;
-        }
-
-        #asistencia .btn-container {
-            margin-left: auto;
-        }
-
-
-
-
-
-        .container--redes{
-  width:400px;
-  left:0;
-  position:fixed;
-  top:25%;
-    z-index: 9999; /* Valor alto para asegurar que esté por encima de todo */
-
-  }
-
-
-
-.icon{
-  top:50%;
-  position:relative;
-  margin-bottom:10px;
-  }
-
-
-.icon-primary{
-  display:inline-block;
-  text-decoration:none;
-  color:#fff;
-  background-color:#3b5998;
-  border-radius:100%;
-  position:relative;
-  z-index:1;
-  box-shadow:1px 0 1px rgba(0,0,0,.5);
-  height:40px;
-  width:40px;
-  text-align:center;
-  line-height:40px;
-  }
-
-.container-description{
-  overflow:hidden;
-  position:absolute;
-  top:0;
-  left:24px;
-
-}
-
-.icon-description{
-  width:250px;
-  display:inline-block;
-  text-decoration:none;
-  color:#fff;
-  background-color:#3b5998;
-  height:40px;
-  line-height:40px;
-  padding-left:40px;
-  border-radius:0 20px 20px 0;
-  transform: translate3d(-110%, 0, 0);
-  transition:transform 175ms ease;
-}
-
-.icon-primary:hover  ~ .container-description .icon-description{
-     transform: translate(0, 0);
-  
-}
-
-/*colores para redes sociales*/
-.color-twitter{
-  background-color:white;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-.color-whatsapp {
-
-  background-image: url('imagenes/whatsapp.png');
-  /* Ajusta el tamaño y otras propiedades del fondo según sea necesario */
-  background-size: cover; /* Ajusta el tamaño del fondo */
-  display: inline-block; /* Para que el elemento <a> sea un bloque de tamaño adecuado */
-  width: 40px; /* Ancho del icono, ajusta según sea necesario */
-  height: 40px; /* Alto del icono, ajusta según sea necesario */
-  text-indent: -9999px; /* Oculta el texto dentro del enlace, mostrando solo el fondo */
-  font-size: 0; /* Ajusta el tamaño de la fuente a cero para ocultar cualquier texto visible */
-}
-
-
-
-
-.color-whatsapp-text {
-    position: relative; /* Establece posición relativa para permitir superposición */
-    display: inline-block;
-    padding: 10px 15px;
-    color: #fff;
-    background-image: url('imagenes/whatsapp.png');
-    background-size: cover;
-    text-decoration: none;
-    font-size: 14px;
-    font-weight: bold;
-    text-align: center;
-    overflow: hidden; /* Oculta cualquier desbordamiento del contenido */
-}
-
-.color-whatsapp-text span {
-    position: relative; /* Establece posición relativa para permitir superposición */
-    z-index: 1; /* Asegura que el texto esté por encima del fondo */
-}
-
-
-
-
-
-
-.color-gmail {
-
-    background-image: url('imagenes/gmail.png');
-  /* Ajusta el tamaño y otras propiedades del fondo según sea necesario */
-  background-size: cover; /* Ajusta el tamaño del fondo */
-  display: inline-block; /* Para que el elemento <a> sea un bloque de tamaño adecuado */
-  width: 40px; /* Ancho del icono, ajusta según sea necesario */
-  height: 40px; /* Alto del icono, ajusta según sea necesario */
-  text-indent: -9999px; /* Oculta el texto dentro del enlace, mostrando solo el fondo */
-  font-size: 0; /* Ajusta el tamaño de la fuente a cero para ocultar cualquier texto visible */
-}
-
-
-
-
-
-.color-gmail-text {
-    position: relative; /* Establece posición relativa para permitir superposición */
-    display: inline-block;
-    padding: 10px 15px;
-    color: #fff;
-    background-size: cover;
-    text-decoration: none;
-    font-size: 14px;
-    font-weight: bold;
-    text-align: center;
-    overflow: hidden; /* Oculta cualquier desbordamiento del contenido */
-}
-
-.color-gmail-text span {
-    position: relative; /* Establece posición relativa para permitir superposición */
-    z-index: 1; /* Asegura que el texto esté por encima del fondo */
-}
-
-
-
-
-
-
-
-
-
-
-/* Estilo para el hover del enlace */
-ul.navigation-menu li a:hover {
-    background-color: #ddd;
-    color: #000;
-    border-radius: 5px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.virtual-consultation {
-    background-color: rgb(230, 230, 230); /* Gris claro */
-    padding: 80px 0;
-    text-align: center;
-}
-
-.virtual-consultation .container {
-    max-width: 800px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.virtual-consultation .text-wrapper {
-    position: relative;
-    right: 70%;
-    max-width: 100%;
-    text-align: left;
-}
-
-.virtual-consultation h2 {
-    font-size: 40px; /* Aumentado el tamaño del título */
-    margin-bottom: 15px; /* Incrementado el margen inferior */
-    color: #333;
-}
-
-.virtual-consultation p {
-    font-size: 22px;
-    line-height: 1.6;
-    color: #666;
-}
-
-.virtual-consultation .content-wrapper {
-    max-width: 75%;
-    text-align: right;
-}
-
-.virtual-consultation .image-wrapper img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-}
-
-.virtual-consultation .logos {
-    display: flex;
-    justify-content: flex-end; /* Alineación de los logos a la derecha */
-    align-items: center;
-    margin-top: 20px;
-}
-
-.virtual-consultation .logos img {
-    width: 120px;
-    height: auto;
-    margin-left: 20px;
-    opacity: 0.7;
-    transition: opacity 0.3s ease;
-}
-
-.virtual-consultation .logos img:first-child {
-    margin-left: 0;
-}
-
-.virtual-consultation .logos img:hover {
-    opacity: 1;
-}
-
-
-</Style>
- <header>
-        <nav>
-            <div id="logo">
-                <img  id="logooo" src="imagenes/logo.png" alt="Logo">
-                <div class="golden">
-                    Normas&amp; <br> Gestion
-                </div>
-            </div>
-            <ul class="navigation-menu">
-                <li><a href="/servicios">SERVICIOS</a></li>
-                <li><a href="#">AGENDAR</a>
-                    <ul class="subnav">
-                        <li class="card-med" id="serv-groom">
-                            <div class="card-image">
-<img src="imagenes/istockphoto-1144204158-612x612.jpg">                            </div>
-                            <a href="#">
-                                <span>SERVICIO</span>
-                                <span>EMERGENCIA<span class="material-symbols-outlined">5-10 MIN</span></span>
-                            </a>
-                        </li>
-                        <li class="card-med" id="serv-board">
-                            <div class="card-image">
-                                <img src="imagenes/AGENDAMIENTO-DE-CITAS@2x.png">
-                            </div>
-                            <a href="#">
-                                <span>AGENDAR</span>
-                                   <span>CITA<span class="material-symbols-outlined"></span></span>
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-                <li><a href="#">CONTACTANOS</a></li>
-            </ul>
-        </nav>
-    </header>
+<nav class="nav-desktop">
+    <a href="index.html">
+<div class="logo-box">
+    <img class="nav-logo"  id="LOGO" src="imagenes/logocalidad-removebg-preview.png" alt="Logo">
+</div>
+
+    </a>
+                
+    <ul>
+        <li class="feat-link"><a href="/principal">INICIO</a></li>
+        <li class="feat-link"><a href="/servicios">SERVICIOS</a></li>
+        <div class="nav-separator"></div>
+        <li class="grey-link"><a href="/informacion">INFORMACION</a></li>
+        <li class="grey-link"><a href="/contacto">CONTACTENOS</a></li>
+    </ul>
+</nav>
+
+<nav class="dropdown-menu">
+    <ul>
+        <li class="feat-link-resp">
+            <a href="investigacion.html">
+                INICIO
+            </a>
+        </li>
+      
+        <li class="feat-link-resp">
+            <a href="educacion-ambiental.html">
+                SERVICIOS
+            </a>
+        </li>
+        <li class="grey-link-resp">
+            <a href="vision-errotuz">
+                CONOZCANOS
+            </a>
+        </li>
+        <li class="grey-link-resp">
+            <a href="contacto.html">
+                CONTACTENOS
+            </a>
+        </li>
+    </ul>
+</nav>
 
     <section class="heroo">
         <h1>Impulsa tu transformación y conquista tus objetivos</h1>
@@ -1644,120 +1566,28 @@ ul.navigation-menu li a:hover {
         </div>
 
     </section>
-    <section>
-        <br>
-        <h2>PRINCIPALES SERVICIOS</h2>
-<br>
-<br>
-        <ul class="shop-pets">
 
 
-            <li class="card-large card-dark" id="sup-bird">
-                  <h2>Plan Buho (Auditorias Internas) </h2>
-
-              <div class="card border-left-behind">
-        <div class="shadow" style="--url: url('https://i.ibb.co/gSBp82C/b-full.png')"></div>
-        <div class="image background" style="--url: url('https://i.ibb.co/JpJVJxq/Background.png')"></div>
-        <div class="image cutout" style="--url: url('imagenes/istockphoto-93214136-612x612-removebg-preview.png')"></div>
-        <div class="content">
-            <h2>BUHO</h2>
-            <p>Con el plan Buho asegure un exitoso ejercicio de Auditorias Internas bajo las normas ISO con el enfoque de mejora continua  </p>
-        </div>
+<section class="featured">
+    <div class="title-container">
+         <h4>SERVICIO EMERGENCIA</h4>
     </div>
+     
+    <div class="card-container">
+    <a href="https://wa.me/573165362193?text=Hola,%20deseo%20más%20información%20sobre%20el%20Plan%20Elefante" target="_blank">
+            <div class="card card-inv">
+                <div class="card-summary">
+                    <h4>Plan Elefante </h4>
+                <p>Un Sistema de Gestión de Calidad (SGC) personalizado mejora la eficiencia y la satisfacción del cliente. En el Plan Elefante ofrecemos consultoría y materiales adecuados para su organización.</p>
+                </div>
+            </div>
+        </a> 
 
 
-    </div>
+    
+</section>
 
-            </li>
-
-
-
-
-
-
-
-
-      <li class="card-large card-dark" id="sup-bird">
-                  <h2>Plan Colibri (plan Basico) </h2>
-
-              <div class="card border-left-behind">
-        <div class="shadow" style="--url: url('https://i.ibb.co/gSBp82C/b-full.png')"></div>
-        <div class="image background" style="--url: url('https://i.ibb.co/ZdGBm4K/m-background.png')"></div>
-        <div class="image cutout" style="--url: url('https://i.ibb.co/bQNgD6y/b-cutout.png')"></div>
-        <div class="content">
-            <h2>COLIBRI </h2>
-            <p> Con el plan colobri permite establecer la Planeacion Estrategica, la Estructura Organizacional y definicion de procesos esto aplica para todo tipo de organizacion o negocio.</p>
-        </div>
-    </div>
-
-
-
-
-
-            </li>
-
-
-            <li class="card-large card-dark" id="sup-bird">
-                  <h2>Plan Puma (Formacion y Capacitacion) </h2>
-
-              <div class="card border-left-behind">
-        <div class="shadow" style="--url: url('https://i.ibb.co/gSBp82C/b-full.png')"></div>
-        <div class="image background" style="--url: url('https://i.ibb.co/MDBcyMW/b-background.png')"></div>
-        <div class="image cutout" style="--url: url('imagenes/HD-wallpaper-black-panther-panthers-big-puma-cat.jpg')"></div>
-        <div class="content">
-            <h2>PUMA</h2>
-            <p>Formate en linea y esta a la vanguardia de la competitiva global. </p>
-        </div>
-    </div>
-                </ul>
-
-            </li>
-
-        
-
-       
-        </ul>
-    </section>
-<a href="/servicios" id="verto" >VER TODOS LOS SERVICIOS</a>
-    <section>
-        <h2>Otros servicios</h2>
-
-        <ul class="services">
-            <li class="card-large card-dark card-wide" id="serv-groom">
-                <div class="card-image"><img src="imagenes/AGENDAMIENTO-DE-CITAS@2x.png"></div>
-                <ul>
-                    AGENDAR CITA VIRTUAL<span class="subtitle">Recibe acessoria personaliza agendando una cita</span>
-                    <li><a href="#">COSTO CITA</a><span>$80.000</span></li>
-                    <li><a href="#">ASESORIA</a><span>INCLUIDA</span></li>
-                    <li><a href="#">DURACION</a><span>20-45 MIN</span></li>
-                    <button class="btn-filled-dark"><span class="material-symbols-outlined">
-                           
-                        </span>AGENDAR CITA</button>
-
-                </ul>
-
-
-            </li>
-            <li class="card-large card-dark card-wide" id="serv-board">
-                <div class="card-image"><img src="imagenes/istockphoto-1144204158-612x612.jpg"></div>
-                <ul>
-                    SERVICIO DE EMERGECIA<span class="subtitle">Manejar las No Conformidades o inquietudes siendo auditado….</span>
-                    <li><P>¿Te encuentras en medio de una auditoría y de repente, ¡pum!, aparece una No Conformidad  o duda como un fantasma en una casa antigua? ¡No entres en pánico! Aquí te traemos una solucion llamanos…. </P></li>
-                    <li><a href="#">COSTO</a><span>$80.000</span></li>
-                     <li><a href="#">RESPUESTA</a><span>5-10 MIN</span></li>
-                    <button class="btn-filled-dark"><span class="material-symbols-outlined">
-                           
-                        </span>SOLICITAR LLAMADA</button>
-                </ul>
-
-            </li>
-        </ul>
-    </section>
-
-
-
-
-
+  
 
 
 <article class="container--redes">
@@ -1784,16 +1614,15 @@ ul.navigation-menu li a:hover {
 
 
 <div class="icon">
-    <a class="icon-primary color-whatsapp" href="https://wa.me/573165362193?text=Necesito%20m%C3%A1s%20informaci%C3%B3n" target="_blank">
+    <a class="icon-primary color-whatsapp" href="https://wa.me/573219724076?text=Necesito%20m%C3%A1s%20informaci%C3%B3n" target="_blank">
         W
     </a>	
     <div class="container-description">
-        <a class="icon-description color-whatsapp-text" href="https://wa.me/573165362193?text=Necesito%20m%C3%A1s%20informaci%C3%B3n" target="_blank">
+        <a class="icon-description color-whatsapp-text" href="https://wa.me/573219724076?text=Necesito%20m%C3%A1s%20informaci%C3%B3n" target="_blank">
             OBTENER INFORMACIÓN
         </a>	
     </div>
 </div>
-
 
 </article>
 
@@ -1801,174 +1630,132 @@ ul.navigation-menu li a:hover {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-    <section id="atencion" class="attention">
-        <div class="container">
-            <div class="attention-text">
-                <h2>Atendida por Expertos Certificados</h2>
-                <p>Nuestros servicios son prestados por profesionales certificados en gestión de calidad, asegurando la excelencia en cada atención que brindamos.</p>
-            </div>
-            <div class="attention-image">
-                <img id="fotoo" src="imagenes/chico-guapo-seguro-posando-contra-pared-blanca_176420-32936.avif" alt="Descripción de la imagen">
-            </div>
-        </div>
-    </section>
+    <section id="atencion" class="attention full-width-section">
+        <img src="imagenes/pixelcut-export.jpeg" alt="" class="full-width-image">
     </section>
 
 
 
 
 
-<br>
-<br>
 
-
-
-
-
-
-<section class="virtual-consultation">
-    <div class="container">
-        <div class="text-wrapper">
-            <h2>Recibe la mejor asesoría virtual</h2>
-            <p>Conéctate con nosotros para obtener la mejor asesoría virtual y resolver tus consultas de manera efectiva.</p>
-        </div>
-        <div class="content-wrapper">
-            <div class="image-wrapper">
-                <img src="imagenes/teams-to-tv-removebg-preview.png" alt="Computador">
-            </div>
-            <div class="logos">
-                <img src="imagenes/11-como-funciona-microsoft-teams.png" alt="Microsoft Teams">
-                <img src="imagenes/zoom-thumb.jpg" alt="Zoom">
-            </div>
-        </div>
+<section class="featured">
+    <div class="title-container">
+         <h4>SERVICIOS PRINCIPALES</h4>
     </div>
-</section>
+     
+    <div class="card-container">
+    <a href="https://wa.me/573165362193?text=Hola,%20deseo%20más%20información%20sobre%20el%20Plan%20Elefante" target="_blank">
+            <div class="card card-inv">
+                <div class="card-summary">
+                    <h4>Plan Elefante </h4>
+                <p>Un Sistema de Gestión de Calidad (SGC) personalizado mejora la eficiencia y la satisfacción del cliente. En el Plan Elefante ofrecemos consultoría y materiales adecuados para su organización.</p>
+                </div>
+            </div>
+        </a> 
 
+        <a href="https://wa.me/573165362193?text=Hola,%20deseo%20más%20información%20sobre%20el%20Plan%20Hormiga" target="_blank">
+            <div class="card card-edu">
+                <div class="card-summary">
+                <h4>Plan Colibri (plan Basico) </h4>
+                <p>El Plan Colibrí establece la planeación estratégica, la estructura organizacional y los procesos para cualquier negocio.
+</p>
+                </div>
+            </div>
+        </a>
 
+ 
 
-
-
-
-<br>
-<br>
+    <a href="https://wa.me/573165362193?text=Hola,%20deseo%20más%20información%20sobre%20el%20Plan%20Águila" target="_blank">
+            <div class="card card-ases">
+                <div class="card-summary">
+                <h4>Plan Aguila  Hazlo a tu medida!</h4>
+            <p>
+Con el Plan Águila, obtén un sistema de gestión de calidad personalizado con guías detalladas y materiales necesarios para mejorar tu organización.</p>
+                </div>
+            </div>
+        </a>
+    </div>    
 
     
+</section>
+
+  
 <section id="clientes" class="clients">
     <div class="container">
         <h2>Nuestros Clientes</h2>
         <div class="client-grid">
             <div class="client-item">
-                <img src="imagenes/cliente1.jpg" alt="Cliente 1">
+                <img src="imagenes/cliente1.png" alt="Cliente 1">
+            </div>
+           
+            <div class="client-item">
+                <img src="imagenes/cliente2.png" alt="Cliente 2">
             </div>
             <div class="client-item">
-                <img src="imagenes/cliente2.jpg" alt="Cliente 2">
-            </div>
-            <div class="client-item">
-                <img src="imagenes/cliente3.jpg" alt="Cliente 3">
+                <img src="imagenes/cliente3.png" alt="Cliente 3">
             </div>
             <!-- Agrega más clientes aquí -->
         </div>
     </div>
 </section>
-<Br>
-</Br>
-<section id="contacto" class="contact">
-    <div class="container">
-        <h2>Contacto</h2>
-        <form action="mailto:Normas.gestion@gmail.com" method="post" enctype="text/plain">
-            <label for="name">Nombre:</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="email">Correo Electrónico:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="message">Mensaje:</label>
-            <textarea id="message" name="message" required></textarea>
-
-            <button type="submit" class="btn">Enviar</button>
-        </form>
-    </div>
-</section>
 
 
-    <footer>
-        <div class="container">
-            <div class="social-links">
-                <a href="#" target="_blank"><img src="imagenes/facebook.png" alt="Facebook"></a>
-                <a href="#" target="_blank"><img src="imagenes/instagram (1).png" alt="Instagram"></a>
-<a href="https://api.whatsapp.com/send?phone=573165362193&text=Hola%2C%20me%20gustar%C3%ADa%20obtener%20m%C3%A1s%20informaci%C3%B3n" target="_blank">
-    <img src="imagenes/whatsapp.png" alt="WhatsApp">
-</a>
 
 
-            <p>&copy; 2024 Nexus innovations. Todos los derechos reservados.</p>
+
+
+
+
+   <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h4>Contacto</h4>
+                <p><i class="fas fa-envelope"></i> Normas.gestion@gmail.com</p>
+                <p><i class="fab fa-whatsapp"></i> +57 3165362193</p>
+            </div>
+            <div class="footer-column">
+                <h4>Enlaces</h4>
+                <ul>
+                    <li><a href="/principal">Inicio</a></li>
+                    <li><a href="/servicios">Servicios</a></li>
+                    <li><a href="/informacion">Información</a></li>
+                    <li><a href="/contacto">Contáctenos</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Síguenos</h4>
+                <div class="social-media">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 NEXUS INNOVATIONS. Todos los derechos reservados.</p>
         </div>
     </footer>
-     
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/scripts.js" defer></script>
+
 </body>
+<script src="errotuz.js">   
+</script>
 <Script>
+    const hamburgerMenu = document.querySelector('.hamburger');
+const dropdownMenu = document.querySelector('.dropdown-menu');
 
-const angle = 20;
-const rotateCard = window;
-
-const lerp = (start, end, amount) => {
-	return (1 - amount) * start + amount * end;
-};
-
-const remap = (value, oldMax, newMax) => {
-	const newValue = ((value + oldMax) * (newMax * 2)) / (oldMax * 2) - newMax;
-	return Math.min(Math.max(newValue, -newMax), newMax);
-};
-
-window.addEventListener("DOMContentLoaded", (event) => {
-	const cards = document.querySelectorAll(".card");
-	cards.forEach((e) => {		
-		e.addEventListener("mousemove", (event) => {
-			const rect = e.getBoundingClientRect();
-			const centerX = (rect.left + rect.right) / 2;
-			const centerY = (rect.top + rect.bottom) / 2;
-			const posX = event.pageX - centerX;
-			const posY = event.pageY - centerY;
-			const x = remap(posX, rect.width / 2, angle);
-			const y = remap(posY, rect.height / 2, angle);
-			e.dataset.rotateX = x;
-			e.dataset.rotateY = -y;
-		});
-		
-		e.addEventListener("mouseout", (event) => {
-			e.dataset.rotateX = 0;
-			e.dataset.rotateY = 0;
-		});
-	});
-	
-	const update = () => {
-		cards.forEach((e) => {
-			let currentX = parseFloat(e.style.getPropertyValue('--rotateY').slice(0, -1));
-			let currentY = parseFloat(e.style.getPropertyValue('--rotateX').slice(0, -1));
-			if (isNaN(currentX)) currentX = 0;
-			if (isNaN(currentY)) currentY = 0;
-			const x = lerp(currentX, e.dataset.rotateX, 0.05);
-			const y = lerp(currentY, e.dataset.rotateY, 0.05);
-			e.style.setProperty("--rotateY", x + "deg");
-			e.style.setProperty("--rotateX", y + "deg");
-		})
-	}
-	setInterval (update,1000/60)
-});
-
-
-
+hamburgerMenu.addEventListener('mousedown', function(){
+    dropdownMenu.classList.toggle('visible');
+})
 </Script>
+ <script>
+    // Oculta la pantalla de bienvenida después de 3 segundos y muestra el contenido principal
+    setTimeout(function() {
+      document.getElementById('splash-screen').style.display = 'none';
+      document.getElementById('main-content').style.display = 'block';
+    }, 2000); // 2000 ms = 2 segundos
+  </script>
 </html>
